@@ -62,7 +62,8 @@ does. aKlima speaks that cloud API directly:
 ```
 
 Needs a JDK 17 and an Android SDK (set `sdk.dir` in `local.properties` or `ANDROID_HOME`); every push
-to `main` also builds an APK artifact in Actions.
+to `main` also builds an APK artifact in Actions. Note that Actions signs with a fresh runner key, so a
+CI-built APK will not update a locally-built install over the top — uninstall first if you switch.
 
 ## Limits, honestly
 
