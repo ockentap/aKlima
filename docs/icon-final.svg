@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="432" viewBox="0 0 432 432">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12314A"/><stop offset="1" stop-color="#0A1A27"/>
+    </linearGradient>
+  </defs>
+  <rect width="432" height="432" fill="url(#bg)"/>
+  <!-- aKlima: outdoor split unit with fan. Art scaled to the adaptive-icon safe zone
+       (body corner radius from centre = 132 of the 432 canvas = 33 of the 108 viewport). -->
+  <g transform="translate(216,216) scale(0.77) translate(-216,-232)">
+    <rect x="96" y="126" width="240" height="212" rx="30" fill="#EAF4FF"/>
+    <circle cx="216" cy="232" r="70" fill="none" stroke="#7FC4FF" stroke-width="22"/>
+    <g stroke="#7FC4FF" stroke-width="20" stroke-linecap="round" fill="none">
+      <path d="M216,232 L216,186"/>
+      <path d="M216,232 L256,256"/>
+      <path d="M216,232 L176,256"/>
+    </g>
+  </g>
+</svg>

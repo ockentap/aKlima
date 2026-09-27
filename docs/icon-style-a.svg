@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="432" viewBox="0 0 432 432">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12314A"/>
+      <stop offset="1" stop-color="#0B1E2D"/>
+    </linearGradient>
+  </defs>
+  <rect width="432" height="432" fill="url(#bg)"/>
+  <g transform="translate(216,216) scale(2.6)" fill="none" stroke="#7FC4FF" stroke-width="7"
+     stroke-linecap="round" stroke-linejoin="round">
+    <!-- three main axes -->
+    <path d="M0,-34 L0,34"/>
+    <path d="M-29.4,-17 L29.4,17"/>
+    <path d="M29.4,-17 L-29.4,17"/>
+    <!-- branches on each axis end (six pairs) -->
+    <path d="M0,-34 L-9,-43 M0,-34 L9,-43"/>
+    <path d="M0,34 L-9,43 M0,34 L9,43"/>
+    <path d="M-29.4,-17 L-41.4,-10 M-29.4,-17 L-36.4,-29"/>
+    <path d="M29.4,17 L41.4,10 M29.4,17 L36.4,29"/>
+    <path d="M29.4,-17 L41.4,-10 M29.4,-17 L36.4,-29"/>
+    <path d="M-29.4,17 L-41.4,10 M-29.4,17 L-36.4,29"/>
+    <!-- mid-path branch pairs, shorter -->
+    <path d="M0,-17 L-7,-24 M0,-17 L7,-24" stroke-width="5"/>
+    <path d="M0,17 L-7,24 M0,17 L7,24" stroke-width="5"/>
+    <path d="M-14.7,-8.5 L-21.7,-4 M-14.7,-8.5 L-14.7,-16" stroke-width="5"/>
+    <path d="M14.7,8.5 L21.7,4 M14.7,8.5 L14.7,16" stroke-width="5"/>
+    <path d="M14.7,-8.5 L21.7,-4 M14.7,-8.5 L14.7,-16" stroke-width="5"/>
+    <path d="M-14.7,8.5 L-21.7,4 M-14.7,8.5 L-14.7,16" stroke-width="5"/>
+  </g>
+  <!-- warm centre: the unit heats as well as cools -->
+  <circle cx="216" cy="216" r="13" fill="#FFB74D"/>
+</svg>

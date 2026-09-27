@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="432" viewBox="0 0 432 432">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12314A"/><stop offset="1" stop-color="#0A1A27"/>
+    </linearGradient>
+  </defs>
+  <rect width="432" height="432" fill="url(#bg)"/>
+  <!-- B: wall unit in perspective (seen from below), airflow straight down -->
+  <path d="M92,158 L340,158 L364,232 L68,232 Z" fill="#EAF4FF"/>
+  <path d="M104,214 L328,214 L332,226 L100,226 Z" fill="#0B1B29" opacity="0.4"/>
+  <g stroke="#7FC4FF" stroke-width="22" stroke-linecap="round" fill="none">
+    <path d="M132,272 L132,304"/>
+    <path d="M216,272 L216,330"/>
+    <path d="M300,272 L300,304"/>
+  </g>
+</svg>

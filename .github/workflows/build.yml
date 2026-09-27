@@ -1,0 +1,37 @@
+name: Build APK
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - run: chmod +x gradlew && ./gradlew :app:assembleRelease --no-daemon
+      - uses: actions/upload-artifact@v4
+        with:
+          name: aKlima-apk
+          path: app/build/outputs/apk/release/app-release.apk
+      - if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: app/build/outputs/apk/release/app-release.apk
+          draft: false
+          body: |
+            aKlima — a lightweight replacement for the ConnectLife / Hisense app.
+
+            Install, then sign in with your ConnectLife account:
+            - email + password accounts: type them straight into the app
+            - Google-linked accounts: sign in once in your browser and paste the code back (see the
+              sign-in sheet, or the steps on the sign-in screen)

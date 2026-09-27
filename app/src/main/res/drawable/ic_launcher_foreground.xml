@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- aKlima mark: outdoor split-unit with fan. Art is scaled to the adaptive-icon safe zone
+     (half-diagonal 33 of the 108 viewport), so no launcher mask clips it. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:translateX="54"
+        android:translateY="54">
+        <!-- body: rounded square, 46.2 x 40.8, centred -->
+        <path
+            android:fillColor="#EAF4FF"
+            android:pathData="M-17.3,-20.4 h34.6 a5.8,5.8 0 0 1 5.8,5.8 v29.2 a5.8,5.8 0 0 1 -5.8,5.8 h-34.6 a5.8,5.8 0 0 1 -5.8,-5.8 v-29.2 a5.8,5.8 0 0 1 5.8,-5.8 z" />
+        <!-- fan grille -->
+        <path
+            android:strokeColor="#7FC4FF"
+            android:strokeWidth="4.24"
+            android:pathData="M-13.5,0 a13.5,13.5 0 1 0 27,0 a13.5,13.5 0 1 0 -27,0 z" />
+        <!-- three blades -->
+        <path
+            android:strokeColor="#7FC4FF"
+            android:strokeWidth="3.85"
+            android:strokeLineCap="round"
+            android:pathData="M0,0 L0,-8.9" />
+        <path
+            android:strokeColor="#7FC4FF"
+            android:strokeWidth="3.85"
+            android:strokeLineCap="round"
+            android:pathData="M0,0 L7.7,4.6" />
+        <path
+            android:strokeColor="#7FC4FF"
+            android:strokeWidth="3.85"
+            android:strokeLineCap="round"
+            android:pathData="M0,0 L-7.7,4.6" />
+    </group>
+</vector>

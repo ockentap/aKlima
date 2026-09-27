@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  @page { size: A4; margin: 16mm 15mm; }
+  * { box-sizing: border-box; }
+  body { font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; color: #14202c; font-size: 10.5pt; line-height: 1.45; }
+  h1 { font-size: 20pt; margin: 0 0 2mm 0; font-weight: 600; }
+  .sub { color: #5b6b7b; font-size: 9.5pt; margin-bottom: 6mm; }
+  h2 { font-size: 12pt; margin: 6mm 0 2mm 0; color: #0b3d5c; }
+  ol { margin: 0 0 0 5mm; padding: 0; }
+  ol li { margin-bottom: 1.6mm; }
+  ul { margin: 0 0 0 5mm; padding: 0; }
+  ul li { margin-bottom: 1.2mm; }
+  code, .mono { font-family: "DejaVu Sans Mono", monospace; font-size: 9.5pt; background: #eef2f6; padding: 0 1mm; border-radius: 1mm; }
+  .box { border: 0.4mm solid #cfd9e2; border-radius: 2mm; padding: 3mm 4mm; margin: 3mm 0; background: #f8fafc; }
+  .warn { border-left: 1.2mm solid #ffb74d; background: #fff8ef; }
+  .tip { border-left: 1.2mm solid #7fc4ff; background: #f2f8ff; }
+  b { font-weight: 600; }
+  .small { font-size: 9pt; color: #5b6b7b; }
+  .avoid-break { break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<h1>aKlima — signing in</h1>
+<div class="sub">You only have to do this once per phone.</div>
+
+<h2>What aKlima is</h2>
+<p>A small app for our two Hisense air conditioners — the ones already in the ConnectLife app.
+It does the same job without the big vendor app: on/off, temperature, mode, fan, quiet, swing.</p>
+
+<h2>Why the sign-in works this way</h2>
+<p>The ConnectLife account was created with <b>Google</b>. Google does not allow its sign-in to run
+inside another app's built-in page, so the sign-in happens once in your normal browser, and the app
+receives a one-time code from it. After that the app stays signed in and never asks again.</p>
+
+<h2>The steps</h2>
+<ol>
+  <li>Open <b>aKlima</b> and tap <b>Sign in</b>.</li>
+  <li>Tap <b>Sign in with Google (opens a browser)</b>.</li>
+  <li>Tap <b>Open in browser</b> — this opens Chrome, Samsung Internet, or whatever browser you use.</li>
+  <li>On the ConnectLife page, tap <b>SIGN IN BY GOOGLE</b> and choose your Google account.</li>
+  <li>The browser then shows a page it <b>cannot load</b> — something like “This site can't be
+      reached” for <span class="mono">homeassistant.local</span>. <b>That is expected.</b> It is a
+      placeholder address; nothing is broken.</li>
+  <li>Copy that address from the address bar:
+      <ul>
+        <li><b>Chrome / Android:</b> long-press the address bar, then <b>Copy</b></li>
+        <li><b>Safari / iPhone:</b> tap the address bar, then <b>Copy</b></li>
+      </ul>
+  </li>
+  <li>Switch back to <b>aKlima</b>, tap <b>Paste code</b>, paste the address, tap <b>Sign in</b>.</li>
+  <li>Done — the app opens on your air conditioners.</li>
+</ol>
+
+<div class="box tip avoid-break">
+<b>What you are copying:</b> the address always starts with <span class="mono">homeassistant.local</span>
+and contains <span class="mono">code=</span> in the middle. If what you paste has no code in it,
+the app simply says so and nothing happens — you can try again.
+</div>
+
+<h2>If the browser will not open</h2>
+<ol>
+  <li>In aKlima, tap <b>Copy link</b>.</li>
+  <li>Send that link to yourself — Telegram “Saved Messages” is the easiest — and open it on a
+      laptop or a tablet.</li>
+  <li>Sign in with Google there. You land on the same unloadable page: copy its address.</li>
+  <li>Send that address back to the phone and paste it into <b>Paste code</b>.</li>
+</ol>
+
+<h2>Using it afterwards</h2>
+<ul>
+  <li><b>Power:</b> the big round button.</li>
+  <li><b>Temperature:</b> − and + next to the number.</li>
+  <li><b>Mode, fan, quiet, swing, eco, turbo, sleep:</b> the <b>⋯</b> button, top right.</li>
+  <li><b>Two homes:</b> one chip per unit at the top (<i>Vogosca</i>, <i>Svrake</i>).</li>
+  <li><b>Sign out:</b> also in the <b>⋯</b> menu.</li>
+</ul>
+
+<h2>Good to know</h2>
+<ul>
+  <li>The address you copy contains a <b>one-time code</b>. If you take too long it expires — just
+      repeat the steps.</li>
+  <li>Do this <b>once per phone</b>. Each phone keeps its own private session — signing in on one
+      phone does not sign the others out.</li>
+  <li>aKlima never sees your Google password: the sign-in happens on Google's and ConnectLife's own
+      pages, in your browser.</li>
+  <li>Nothing changes on the air conditioner until you actually press something in the app.</li>
+  <li>The app shows the reason, in plain text, if anything fails — screenshot it and send it on.</li>
+</ul>
+
+</body>
+</html>

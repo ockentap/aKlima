@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="432" viewBox="0 0 432 432">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12314A"/><stop offset="1" stop-color="#0A1A27"/>
+    </linearGradient>
+  </defs>
+  <rect width="432" height="432" fill="url(#bg)"/>
+  <!-- A: wall unit, straight airflow -->
+  <rect x="74" y="164" width="284" height="66" rx="33" fill="#EAF4FF"/>
+  <rect x="104" y="210" width="224" height="9" rx="4.5" fill="#0B1B29" opacity="0.45"/>
+  <circle cx="330" cy="197" r="8" fill="#0B1B29" opacity="0.35"/>
+  <g stroke="#7FC4FF" stroke-width="22" stroke-linecap="round" fill="none">
+    <path d="M132,262 L132,296"/>
+    <path d="M216,262 L216,326"/>
+    <path d="M300,262 L300,296"/>
+  </g>
+</svg>
